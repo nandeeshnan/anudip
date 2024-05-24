@@ -1,0 +1,59 @@
+1. Using input() function take one number from the user and using ternary operators check whether the number is even or odd
+
+
+number = int(input("Enter the number to check whether the number is even or odd : "))  # taking the input from the user
+"the number is even " if number%2==0 else "the number is odd"                          # condition to check even odd                  
+
+OUTPUT  : 
+
+Enter the number to check whether the number is even or odd : 5
+'the number is odd'
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+2. Using input function take two number and then swap the number 
+
+
+num1= int(input("enter the first number : "))                              #input for the first number
+num2= int(input("enter the second number : "))                             #input for the second number
+print(f"Before swapping num1={num1} and num2={num2}")                      #Numbers Before swaping
+num1=num2
+num2=num1                                                                  #swapping stataments
+print(f"After swapping num1={num1} and num2={num2}")                       # swapping After swapping
+
+
+OUTPUT : 
+
+enter the first number : 2
+enter the second number : 3
+Before swapping num1=2 and num2=3
+After swapping num1=3 and num2=3
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+3. Write a Program to Convert Kilometers to Miles 
+
+km = int(input("Enter the number of kilometers you need to convert into miles : "))   # taking number of km from the user
+miles = km * 0.621371                                                                 # converting the km to miles
+print(f"the number of miles = {miles}")                                               # printing the miles 
+
+OUTPUT : 
+
+Enter the number of kilometers you need to convert into miles : 5
+the number of miles = 3.106855
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+4. Find the Simple Interest on Rs. 200 for 5 years at 5% per year. 
+
+p =200                                                               # given principle amount
+r = 5                                                                # given rate of interest
+t = 5                                                                # given time period
+simple_interest = (p * t * r)/100                                    # fromula to calculate the simple interest
+print("the simple interest is = ",simple_interest)                   # printing the final result 
+
+OUTPUT : 
+
+the simple interest is =  50.0
+
+----------------------------------------------------------------THANK YOU------------------------------------------------------------

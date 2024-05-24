@@ -1,0 +1,59 @@
+1) # multiplication of two numbers
+
+
+num1=int(input("enter the 1st number"))                                         # input for 1st number
+num2=int(input("enter the 2nd number"))                                         # input for 2nd number
+print(f"the multiplication of two numbers {num1} and {num2} is",num1*num2)      # result i.e is multiplication of two numbers
+  
+output :
+
+enter the 1st number: 2
+enter the 2nd number: 3
+the multiplication of two numbers 2 and 3 is 6
+
+-------------------------------------------------------------------------------------------
+
+2) #find the largest number using ternary operator
+
+
+num1=10                                          # 1st number
+num2=20                                          # 2nd number
+num1 if num1>num2 else num2
+
+output : 
+
+20
+
+-------------------------------------------------------------------------------------------
+
+3) #convert celcius to fahrenheat
+
+
+celsius=int(input("enter the temperature in celcius that you need to calcualate "))      #   input of temperature in celcius
+fahrenheat = (9/5) * celsius + 32                                                        # condition to convert the temp from celcius to fahran heat
+print("the temperature in fahrenheat is ",fahrenheat,"f")                                #result in fahren heat
+
+
+output : 
+
+enter the temperature in celcius that you need to calcualate 97
+the temperature in fahrenheat is  206.6 f
+
+-------------------------------------------------------------------------------------------
+
+4) #area of triangle
+
+
+base=int(input("enter the length"))               # input for base
+height=int(input("enter the breadth"))            #input for height
+area=0.5*base*height                              # expression to calculate the area of triangle
+print("the area of the triangle is ", area)       #result of area of triangle
+
+
+output: 
+
+enter the length2
+enter the breadth4
+the area of the triangle is  4.0
+
+ 

@@ -1,0 +1,92 @@
+1)  Write a python program to reverse a number using a while loop. 
+
+PROGRAM : 
+
+number=int(input("Enter the number you need to reverse"))                  # take the input from the user 
+rem=0                                                                      # inititalise the reminder (rem) as 0
+res=0                                                                      # initialise the result (res) as 0
+while number!=0:                                                           # while condition runs until the the conction becomes false
+    rem=number % 10                                                        # finding the last digit in the number
+    res=res*10+rem                                                         # storing the digit in reverse order in the res variable
+    number=number//10                                                      # this will gives the number by removing the last digit in that input number
+print(res)                                                                 # print the final result
+ 
+
+OUTPUT :
+
+Enter the number you need to reverse123456789
+987654321
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) Write a python program to check whether a number is palindrome or not? 
+
+PROGRAM :
+
+number=int(input("Enter the number you need to check palindrome or not: "))         # take the input from the user
+original=number                                                                     # store the input in another variable
+rem=0                                                                               # inititalise the reminder (rem) as 0
+res=0                                                                               # initialise the result (res) as 0
+while number!=0:                                                                    # while condition runs until the the conction becomes false
+    rem=number % 10                                                                 # finding the last digit in the number
+    res=res*10+rem                                                                  # storing the digit in reverse order in the res variable
+    number=number//10                                                               # this will gives the number by removing the last digit in that input number
+if res==original:                                                                   # condition to check it is palindrome or not
+    print("the number is palindrome")                                               # print if it is palindrome
+else:
+    print("The number is not palindrome")                                           # print if it is not palindrome
+
+
+OUTPUT : 
+
+Enter the number you need to check palindrome or not: 43123
+The number is not palindrome
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3) Write a python program finding the factorial of a given number using a while loop. 
+
+PROGRAM :
+
+
+number=int(input("Enter the number to find the factorial: "))                    # take the input from the user
+num=number                                                                       # store the number in the another variable as var
+fact=1                                                                           # initialise the variable fact as 1
+while number>1:                                                                  # while condition runs until the number is less than 1
+    fact=fact*number                                                             # multiplying fact and number and store in the fact itself
+    number-=1                                                                    # decrement the number by 1
+print(F"The factorial of {num} is ",fact)                                        # print the factorial 
+
+
+OUTPUT : 
+
+Enter the number to find the factorial: 5
+The factorial of 5 is  120
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4) Accept numbers using input() function until the user enters 0. If user input 0 then break the while loop and display the sum of all the numbers.
+
+PROGRAM :
+
+
+result=0                                                                 # initialise the result as 0
+while True:                                                              # while condition will execute until it exit from the loop , because of false conditoin
+    number=int(input("Enter the number: "))                              # take the input from the user
+    if number == 0:                                                      # if condition to check if the number is equal is 0
+        break                                                            # if conditon is true then it will break here
+    result+=number                                                       # add the number to the result 
+print("The sum of all the numbers is ",result)                           # print the sum of all numbers as result
+
+
+OUTPUT : 
+
+Enter the number: 12
+Enter the number: 2
+Enter the number: 3
+Enter the number: 41
+Enter the number: 0
+The sum of all the numbers is  58
+
+---------------------------------------------------------------------------------------------THANK YOU -------------------------------------------------------------------------------------

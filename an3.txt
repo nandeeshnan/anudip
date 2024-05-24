@@ -1,0 +1,260 @@
+1. A company decided to give a bonus of 5% to an employee if his/her year ofservice is more than 5 years .Ask users for their salary and year of service and print the net bonus amount.
+
+PROGRAM
+
+name= input("Enter the name of the employee: ")                                                     # taking name input from user
+salary=int(input(f"Enter the {name}'s salary "))                                                    # taking salary input from user
+service_year=int(input(f"Enter the number of year's  {name} as been served in the company: "))      # taking number of years as input
+if service_year > 5 :                                                                               # condition to check year >5
+    bonus=0.05*salary
+    print(f"The bonus amount of {name} is ",bonus)                                                  # print  bonus if servie is more than 5
+else:
+    print(f"{name} dint work for 5 years in the company ,so no bonus for him")                      # printing if no bonus 
+
+
+OUTPUT 1 :
+
+Enter the name of the employee: Nandeesh
+Enter the Nandeesh's salary 5000
+Enter the number of year's  Nandeesh as been served in the company: 6
+The bonus amount of Nandeesh is  250.0
+
+
+OUTPUT 2 : 
+
+Enter the name of the employeeNandeesh
+Enter the Nandeesh's salary 10000
+Enter the number of year's  Nandeesh as been served in the company: 3
+Nandeesh dint work for 5 years in the company ,so no bonus for him
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2. A shop will give a discount of 10% if the cost of purchased quantity is more than 1000.Ask user for quantity Suppose, one unit will cost 100.Judge and print total cost for user.
+
+PROGRAM : 
+
+quantity= int(input("Enter the numbers of units the user hass taken : "))   # taking input as number of quantities taken by user
+total_price=quantity*100                                                    # calculating the total price
+if total_price>1000:                                                        # condition if total price is > than 1000
+    discount = total_price*0.1                                              # calcualte the discount
+    total_cost=total_price-discount                                         # total cost after the discount                              
+    print("Without discount the total cost is :" , total_price)        # print total cost before the discount
+    print("The total cost for the user after discount " , total_cost)       # print total cost after the discount
+else:
+    print("No discount for the user")                                       # print if the user dont have the bonus
+
+
+OUTPUT 1 : 
+
+
+Enter the numbers of units the user hass taken : 12
+Without discount the total cost is : 1200
+The total cost for the user after discount  1080.0
+
+output 2 :
+
+Enter the numbers of units the user hass taken : 8
+No discount for the user
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3) Python program to check leap year 
+
+PROGRAM :
+
+year =int(input("Enter the year you need to check : "))         # taking the input from the user 
+if (year%4 == 0 and year%100 != 0) or (year % 400 == 0):        # condition to check whether the year i leap year or not
+    print("It is Leap year")                                    # print if yaer is leap year
+else:
+    print("It is Not Leap year")                                # print if the year is not leap year
+
+
+OUTPUT : 
+
+Enter the year you need to check : 2001
+It is Not Leap year
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4) Python Program to Find the Largest Among Three Numbers 
+
+PROGRAM : 
+
+num1= int(input("Enter the first number"))                     # taking the first input number
+num2 = int(input("Enter the second number"))                   # taking the second input number
+num3 = int(input("Enter the third number"))                    # taking the third input number
+if num1 > num2 and num1 >num3 :                                # taking the first input number
+    print(" first number is greater i.e ",num1)
+elif num2>num1 and num2>num3:
+    print("second number is greater i.e ",num2)                # taking the first input number
+else:
+    print("third number is greater i.e",num3)
+
+
+OUTPUT :
+
+Enter the first number12
+Enter the second number4
+Enter the third number8
+first number is greater i.e  12
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+5)  Python Program to Check if a Number is Positive, Negative or 0 
+
+
+PROGRAM :
+
+number=int(input("Enter the number: "))                 # take the input from the user as number
+if number > 0:                                         # condition to check the number is greater than 0 or not
+    print("the given number is positive ")              # print  positive if number is greater than 0 
+elif number<0:
+    print('the given number is negative')              # print  negative if number is lesser than 0 
+else:
+    print("the given number is Zero (0) ")             # print  Zero if number is equal to 0 
+
+
+OUTPUT 1 : 
+
+Enter the number: 12
+the given number is positive
+
+OUTPUT 2 :
+
+Enter the number: -12
+the given number is negative
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+6) A toy vendor supplies three types of toys: Battery Based Toys, Key-based Toys, and Electrical Charging Based Toys. The vendor gives a discount of 10% on orders for battery-based toys if the order is for more than Rs. 1000. On orders of more than Rs. 100 for key-based toys, a discount of 5% is given, and a discount of 10% is given on orders for electrical charging based toys of value more than Rs. 500. Assume that the numeric codes 1,2 and 3 are used for battery based toys, key-based toys, and electrical charging based toys respectively. Write a program that reads the product code and the order amount and prints out the net amount that the customer is required to pay after the discount. 
+
+ # Battery Based Toys : code is 1
+ # Key-based Toys : code is 2 
+ # Electrical Charging Based Toys : code is 3
+
+
+PROGRAM : 
+
+
+toy_code= int(input ('Enter the code for the toy : '))                                                  # taking input for the toy code
+if toy_code ==1:                                                                                        # condition to check the toy code
+    cost = int(input("Enter the total cost of the toys : "))                                            # taking input of total cost spent to buy the toys 
+    if cost>1000:                                                                                       # condtition to check the cost is > 1000
+        discount=cost*0.1                                                                               # calculating the discount
+        total_cost=cost-discount                                                                        # calculating the total cost after removing the discount      
+        print('The discount amount is ',discount)                                                       # printing the discount amount
+        print("The total amount that customer should pay = ",total_cost,)                               # printing the total amount that customer should pay removing the discount
+    else:
+        print(f"The total amount that customer should pay = ",cost,"--> NO discount")                   # printing the amount that the customer should pay wihout any discount 
+elif toy_code==2:
+    cost = int(input("Enter the total cost of the toys : "))
+    if cost >100 :
+        discount = cost*0.05
+        total_cost=cost-discount
+        print('The discount amountis ',discount)
+        print("The total amount that customer should pay = ",total_cost)
+    else:
+        print("The total amount that customer should pay = ",cost,"--> NO discount")
+elif toy_code==3:
+    cost = int(input("Enter the total cost of the toys : "))
+    if cost>500 :
+        discount = cost*0.1
+        total_cost=cost-discount
+        print('The discount amountis ',discount)
+        print("The total amount that customer should pay = ",total_cost)
+    else:
+        print("The total amount that customer should pay = ",cost,"--> NO discount")
+else:
+    print("Enter the valid toy code")
+
+
+
+OUTPUT 1 :
+
+
+Enter the code for the toy : 1
+Enter the total cost of the toys : 1500
+The discount amount is  150.0
+The total amount that customer should pay =  1350.0
+
+
+OUTPUT 2 :
+
+
+Enter the code for the toy : 2
+Enter the total cost of the toys : 150
+The discount amount is  7.5
+The total amount that customer should pay =  142.5
+
+OUTPUT 3 :
+
+
+Enter the code for the toy : 3
+Enter the total cost of the toys : 450
+The total amount that customer should pay =  450 --> NO discount
+
+
+OUTPUT 4 :
+
+
+Enter the code for the toy : 4
+Enter the valid toy code
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+7) A transport company charges the fare according to following table: Distance Charges 1-50 8 Rs./Km 51-100 10 Rs./Km > 100 12 Rs/Km
+
+PROGRAM : 
+
+
+distance =int(input("Enter the distsnce thst the person travelled : "))             # taking input from the user as a distance 
+if distance > 1 and distance < 50 :                                                 # condition to check if distance > 1 and < 50 
+    charges=distance * 8                                                            # calculating the charges for that diatance
+    print(f"The total charges for {distance} km's is ",charges)                     # printing the total charges that should pay for that distance
+elif distance >50 and distance <100:
+    charges =distance * 10
+    print(f"The total chargs for {distance} km's is ",charges)
+else:
+    charges = distance * 12
+    print(f"The total chargs for {distance} km's is ",charges)
+
+
+OUTPUT 1 : 
+
+Enter the distsnce thst the person travelled : 34
+The total charges for 34 km's is  272
+
+OUTPUT 2 :
+
+Enter the distsnce thst the person travelled : 67
+The total chargs for 67 km's is  670
+
+OUTPUT 3 :
+
+Enter the distsnce thst the person travelled : 112
+The total chargs for 112 km's is  1344
+
+
+------------------------------------------------------------------------------------------THANK YOU ----------------------------------------------------------------------------------------
+
+
+
+    
+        
+
+    
+
+
+
+
+    

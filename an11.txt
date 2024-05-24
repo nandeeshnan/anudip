@@ -1,0 +1,114 @@
+1. Write a Python program to sum all the items in a list. 
+
+
+PROGRAM :
+
+
+list=[2,4,5,6,7,8,9]                                                      # take a list with some values
+sum=0                                                                     # initialise the variable called sum as 0
+for ele in list:                                                          # iterate the list using for loop
+    sum+=ele                                                              # add each element in the loop to the sum
+print(f"The sum of all the elements in the list is {sum}")                # print the sum 
+
+
+OUTPUT :
+
+The sum of all the elements in the list is 41
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Write a Python program to get the largest and smallest number from a list without builtin functions. 
+
+PROGRAM :
+
+list=[3,54,23,56,78,29]                                            # take a list with some values                                         
+minimum=list[0]                                                    # take a minimum variable and store 1st element of list in that variable
+maximum=list[0]                                                    # take a maximum variable and store 1st element of list in that variable
+for ele in list:                                                   # iterate the list using for loop
+    if ele<minimum:                                                # check if the element in the list is less than minimum value
+        minimum=ele                                                # then store the element in the minimum variable
+    if ele>maximum:                                                # take another if condition to check if the element is greater than the maximum value
+        maximum = ele                                              # if condition true then store the element in the maximum variable
+print(f"The minimum element in the list is : {minimum}")           # print the minimum element
+print(f"The maximum element in the list is : {maximum}")           # print the maximum element 
+
+
+OUTPUT :
+
+The minimum element in the list is : 3
+The maximum element in the list is : 78
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Write a Python program to find duplicate values from a list and display those. 
+
+
+PROGRAM : 
+
+list=[3,5,7,6,3,7,9]                                                # take a list and store the some values
+empty_list=[]                                                       # take another empty list 
+for i in list:                                                      # iterate the list using for loop
+    if list.count(i)>=2:                                            # if count of each element is more than 1
+        empty_list.append(i)                                        # then append that value to the empty list
+print("The duplicate values in the list is ",set(empty_list))       # print the list with the set function , so only 
+
+
+OUTPUT :
+
+The duplicate values in the list is  {3, 7}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Write a Python program to split a given list into two parts where the length of the first part of the list is given. 
+
+Original list: [1, 1, 2, 3, 4, 4, 5, 1] 
+
+Length of the first part of the list: 3 
+
+Splitted the said list into two parts: 
+
+([1, 1, 2], [3, 4, 4, 5, 1]) 
+
+
+PROGRAM :
+
+list=[1, 1, 2, 3, 4, 4, 5, 1]                           # take a list with some values
+def func():                                             # define a function as func
+    return (list[0:3],list[3:])                         # return the list with 0 to 3 as one list and remaining elements as another list in one list
+func()                                                  # call the function
+
+
+OUTPUT :
+
+([1, 1, 2], [3, 4, 4, 5, 1])
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+5. Write a Python program to traverse a given list in reverse order, and print the elements with the original index. Original list: ['red', 'green', 'white', 'black'] Traverse the said list in reverse order:
+
+black 
+
+white 
+
+green 
+
+red
+
+
+PROGRAM :
+
+list=['red', 'green', 'white', 'black']    # take a list with some colors
+list.reverse()                             # reverse the list using reverse function()
+for ele in list:                           # iterate the reversed list using for loop
+    print(ele)                             # print the each and every element in the list
+
+OUTPUT :
+
+black
+white
+green
+red
+
+-----------------------------------------------------------------------------------THANK YOU------------------------------------------------------------------------------------------------

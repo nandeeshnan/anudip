@@ -1,0 +1,106 @@
+1. Write a Python program to count the occurrences of each word in a given sentence 
+
+string = “To change the overall look of your document. To change the look available in the gallery” 
+
+PROGRAM : 
+
+
+string = "To change the overall look of your document. To change the look available in the gallery" 
+
+dict={}                                                                     # initialize the dictionary                                   
+str_split=string.split()                                                    # split the string into words
+for word in str_split:                                                      # using the splitted words using for loop
+    if word in dict:                                                        # if word is in dictionary then
+        dict[word]+=1                                                       # increment the count of that word
+    else:                                                                   # else the word is not present in dict
+        dict[word]=1                                                        # then add that word to the dictionary
+for words,count in dict.items():                                            # using for loop iterate the dictionary ,here dict_items represent both key (words) and values (count)
+    print(f"{words} --->{count} times")                                     # print the word with count in the string
+
+
+OUTPUT :
+
+To ---> 2 times
+change ---> 2 times
+the ---> 3 times
+overall ---> 1 times
+look ---> 2 times
+of ---> 1 times
+your ---> 1 times
+document. ---> 1 times
+available ---> 1 times
+in ---> 1 times
+gallery ---> 1 times
+
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+2. Write a Python program to remove a newline in Python 
+
+String = "\nBest \nDeeptech \nPython \nTraining\n" 
+
+
+PROGRAM :
+
+string = "\nBest \nDeeptech \nPython \nTraining\n"                   # given string
+print(string.replace("\n",""))                                       # replace the \n with empty ,so that new line in the string will be removed
+
+
+OUTPUT : 
+
+Best Deeptech Python Training
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+
+3. Write a Python program to reverse words in a string 
+
+String = “Deeptech Python Training” 
+
+
+PROGRAM :
+
+
+string = "Deeptech Python Training"                               # given string
+list1=string.split()                                              # split the string into words
+print("The reversed words in the string are :")                   # print the statement
+for i in list1:                                                   # iterate the list1 using for loop
+    j=i[::-1]                                                     # reverse the every word in the list and store in the variable j
+    new_string="".join(j)                                         # join the reversed string to the new_string
+    print(new_string,end=" ")                                     # print the new_string where every word is reversed
+    
+
+OUTPUT : 
+
+
+The reversed words in the string are :
+hcetpeeD nohtyP gniniarT 
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+4. Write a Python program to count and display the vowels of a given text String=”Welcome to python Training
+
+PROGRAM :
+
+
+string="Welcome to python Training"                                     # given string
+vowels=0                                                                # initialize the variable (vowels ) with zero(0)
+list1=list(string)                                                      # convert the string into list , so that we will get every character separately as a string
+for i in list1:                                                         # iterate the list using for loop 
+    if i=="a" or i=="e" or i=="i" or i=="o" or i=="u":                  # check whether any character in the list is voewls (a , e, i, o, u)
+        vowels+=1                                                       # if the character is vowel then increment the count of vowels
+print(f"The total count of vowels in the string is ",vowels)            # print the total count of the vowels in the string
+
+
+OUTPUT :
+
+
+The total count of vowels in the string is  8
+
+
+---------------------------------------------------------------THANK YOU-----------------------------------------------------------------
+

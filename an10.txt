@@ -1,0 +1,103 @@
+1. Write a Python program to handle a ZeroDivisionError exception when dividing a number by zero. 
+
+
+PROGRAM :
+
+def zerodivision(x,y):                                                # define the function as zerodivision
+    try:                                                              # start the try block and write the code inside this block
+        res=x/y                                                       # divide the variable x with y and store in the variable res
+        print(f"The result of x/y is ",res)                           # print the res
+    except ZeroDivisionError:                                         # handle the zerodivisionerror in the except block
+        print(f"the value {x} cannot be divided by {y}")              # print the error message
+zerodivision(4,0)                                                     # call the function
+ 
+
+OUTPUT 1 :
+
+
+The result of x/y is  2.0
+
+OUTPUT 2 :
+
+the value 4 cannot be divided by 0
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Write a Python program that prompts the user to input an integer and raises a ValueError exception if the input is not a valid integer.
+
+
+PROGRAM :
+
+def value_error():                                                          # define the function as value_error
+    user_input=input("enter the number: ")                                  # take the input from the user
+    try:                                                                    # start the try and write the code or function inside this block
+        check_input=int(user_input)                                         # store the input value in the form of integer in the check_input variable
+        print("the entered number is : ",user_input)                        # print the entered number or any message
+    except ValueError:                                                      # handle the value error using except block
+        print("Value Eror ! , please enter the integer value")              # print the error message 
+value_error()                                                               # call the function
+ 
+
+OUTPUT 1 :
+
+enter the number: 5
+the entered number is :  5
+
+OUTPUT 2 :
+
+enter the number: 5.6
+Value Eror ! , please enter the integer value
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Write a Python program that opens a file and handles a FileNotFoundError exception if the file does not exist. 
+
+PROGRAM : 
+
+def read_function():                                                     # define the function as read_function
+    try:                                                                 # start the try block and write the code inside this block
+        with open("ABC.txt", 'r', encoding='utf-8') as f:                # open the file using open function as read mode (r)
+                print("File is opened ,you can read the file")           # print the statement if the file is exist and able to read the file
+    except FileNotFoundError:                                            # handle the exception using file not found error 
+        print(f"The file  is not found")                                 # print the error message or file not found
+read_function()                                                          # call the function
+ 
+
+OUTPUT 1 :
+
+File is opened ,you can read the file
+
+OUTPUT 2 :
+
+The file  is not found
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------
+4. Write a Python program that prompts the user to input two numbers and raises a TypeError exception if the inputs are not numerical
+
+PROGRAM :
+
+def valueerror():                                                 # define the function as valueerror()
+    try:                                                          # start the try block and write the code inside the block
+        user1 =input("enter the first number: ")                  # take the input from the user and store in variable user1
+        user2=input("enter the second number: ")                  # take the input from the user and store in variable user2
+        num1=int(user1)                                           # store the integer of input in the variable num1
+        num2=int(user2)                                           # store the integer of input in the variable num2
+        return num1,num2                                          # return the num1 and num2
+    except ValueError:                                            # handle the exception using value error 
+        print("Type Error !, Please enter the integer")           # print the error message
+valueerror()                                                      # call the function
+
+OUTPUT 1 :
+
+enter the first number: 34
+enter the second number: 46
+(34, 46)
+
+OUPUT 2:
+
+enter the first number: NAN
+enter the second number: DEESH
+Type Error !, Please enter the integer
+
+--------------------------------------------------------------------------------------------THANK YOU---------------------------------------------------------------------------------------

@@ -1,0 +1,108 @@
+1. Write a Python program to Count all letters, digits, and special symbols from the given 
+
+string Input = “P@#yn26at^&i5ve” 
+
+
+
+PROGRAM : 
+
+string= "P@#yn26at^&i5ve"                                                                  # given input string 
+chars=0                                                                                    # initialize the variable chars as 0
+Digits=0                                                                                   # initialize the variable Digits as 0
+symbols=0                                                                                  # initialize the variable symbols as 0
+for i in string:                                                                           # iterate the string using for loop
+    if i.isalpha():                                                                        # check if the character is alphabet 
+        chars+=1                                                                           # if the character is alphabet then increment the count of chars
+    elif i.isdigit():                                                                      # check if the character is digit 
+        Digits+=1                                                                          # then increment the count of Digits
+    else: 
+        symbols+=1                                                                         # else increment the symbols count 
+print(f" chars = {chars}\n Digits = {Digits}\n symbols = {symbols}")                       # print all the cases 
+ 
+
+OUTPUT : 
+
+ chars = 8
+ Digits = 3
+ symbols = 4
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Write a Python program to remove duplicate characters of a given string. 
+
+Input = “String and String Function” 
+
+PROGRAM : 
+
+
+string = "String and String Function"          # given input string 
+list1=string.split()                           # split the string using split function and store in the variable list1
+list2=[]                                       # take 1 empty list as list2
+for word in list1:                             # iterate the string using for loop
+    if word not in list2:                      # if the word not in list2 
+        list2.append(word)                     # append the word to list2
+print(" ".join(list2))                         #  using join function  join all the words in the list2
+
+
+OUTPUT :
+
+String and Function
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3. Write a Python program to count Uppercase, Lowercase, special character and numeric values in a given string
+
+ Input = “Hell0 W0rld ! 123 * # welcome to pYtHoN” 
+
+
+PROGRAM : 
+
+string = "Hell0 W0rld ! 123 * # welcome to pYtHoN"                      # given input string 
+lowercase=0                                                             # initialise the lowercase variable as 0
+uppercase=0                                                             # initialise the uppercase variable as 0
+numbers=0                                                               # initialise the numbers variable as 0
+specialcase=0                                                           # initialise the specialcase variable as 0
+for i in string:                                                        # iterate the string using for loop
+    if i.islower():                                                     # if the character is in lowercase
+        lowercase+=1                                                    # then increment the lowercase variable
+    elif i.isupper():                                                   # if the character is in uppercase
+        uppercase+=1                                                    # then increment the uppercase variable
+    elif i.isdigit():                                                   # if the character is digit
+        numbers+=1                                                      # then increment the uppercase variable
+    else:
+        specialcase+=1                                                  # else increment the specialcase variable
+print(f" Lowercase = {lowercase} \n Uppercase = {uppercase} \n Numbercase = {numbers} \n Specialcase = {specialcase}")
+            
+
+OUTPUT : 
+
+
+ Lowercase = 18 
+ Uppercase = 5 
+ Numbercase = 5 
+ Specialcase = 11
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Write a Python Count vowels in a string 
+
+input= “Welcome to Python Assignment” 
+
+
+PROGRAM :
+
+
+string="Welcome to Python Assignment"                                      # given input string
+vowels="aeiouAEIOU"                                                        # store the vowels in the variable vowels
+vowel_count=0                                                              # initialize the vowel_count as 0
+for i in string:                                                           # iterate the string using for loop
+    if i in vowels:                                                        # if the char in string is in vowels
+        vowel_count+=1                                                     # increment the count of the vowel_count
+print("The total count of vowels in the string is :",vowel_count)          # print the total vowels in the string using print statement
+
+OUTPUT :
+
+The total count of vowels in the string is : 8
+
+-------------------------------------------------------------------THANK YOU----------------------------------------------------------------------------------------------------------------

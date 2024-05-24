@@ -1,0 +1,119 @@
+1. Print the first 10 natural numbers using for loop 
+
+PROGRAM :
+
+number=int(input("Enter the number up to where u have the numbers : "))                    # take the input from the user to print the number up to that range
+for i in range(number+1):                                                                  # using for loop iterate up to given range
+    print(i, end =" ")                                                                     # print the number from every iteration
+
+OUTPUT :
+
+Enter the number up to where u have the numbers : 10
+0 1 2 3 4 5 6 7 8 9 10 
+
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+2. Python program to check if the given string is a palindrome 
+
+PROGRAM :
+
+string=input("Enter the string that u need to check for palindrome : ")             # take the string input from the user to check palindrome or not
+if string==string[::-1]:                                                            # reverse the given string by using  [::-1] logic and check the string and reversed string are same/not 
+    print(f" The given string {string} is palindrome")                              # print if the string is palindrome
+else:
+    print(f" The given string {string} is not palindrome")                          # print if the string is not palindrome 
+
+OUTPUT 1 :
+
+Enter the string that u need to check for palindrome : nandeesh
+ The given string nandeesh is not palindrome
+
+OUTPUT 2 :
+
+Enter the string that u need to check for palindrome : madam
+The given string madam is palindrome
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Python program to check if a given number is an Armstrong number 
+
+
+PROGRAM :
+
+number=int(input("Enter the number to check the given number is armstrong number or not : "))  # take the input from the user
+num=number                                                                                     # assign the input number to another variable num
+string=len(str(number))                                                                        # find the length of that number after converting it to the string
+ans=0                                                                                          # assign the variable ans to 0
+while number > 0:                                                                              # while condition executes until the number is greater than zero
+    res=number%10                                                                              # find modulos of the input number and store the last digit of the number in the variable res
+    ans=ans+res**string                                                                        #  add ans with the res power of length of the input number
+    number=number//10                                                                          # execute the floor division to get number except the last digit of the number
+if ans==num:                                                                                   # if condition to check the number is Armstrong number or not
+    print("The given number is armstrong number")                                              # print if the number is Armstrong number
+else:
+    print("The given number is not a armstrong number")                                        # print if the number is not Armstrong number
+
+
+OUTPUT 1 :
+
+Enter the number to check the given number is armstrong number or not : 1132
+The given number is not a armstrong number
+
+OUTPUT 2 :
+
+Enter the number to check the given number is armstrong number or not : 153
+The given number is armstrong number
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Python program to get the Fibonacci series between 0 to 50 
+
+
+PROGRAM :
+
+
+a=0                                                             # take one variable (a) and initialize to zero(0)
+b=1                                                             # take another variable (b) and initialize to one(1)
+res=0                                                           # take one more variable (res) and initialize to zero(0)
+print("the fibonacci series from 0 to 50 are :")
+while res<50:                                                   # while condition executes res is less than 50
+    print(res,end=" ")                                          # print the res
+    res=a+b                                                     # add the values a and b and store the result in the res
+    a=b                                                         # store the value of  variable b in variable a 
+    b=res                                                       # store the value of  variable res in variable b
+
+
+OUTPUT : 
+
+
+the fibonacci series from 0 to 50 are :
+0 1 2 3 5 8 13 21 34 
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+5. Python program to check the validity of password input by users
+
+PROGRAM :
+
+password="nandeesh@2001"                                 # given any password and assign it to the variable password
+user_password=input("Enter your password : ")            # take the input form the user
+if password==user_password:                              # check whether the password and user password is same or not 
+    print("The Entered password is correct")             # print if the password is same
+else:
+    print('The password is wrong ,check again !')        # print if the password is not same
+
+OUTPUT 1 :
+
+Enter your password : nandeesh@2001
+The Entered password is correct
+
+OUTPUT 2 :
+
+
+Enter your password : abcdesf
+The password is wrong ,check again !
+
+
+-----------------------------------------------------------------------------------------THANK--YOU----------------------------------------------------------------------------------------

@@ -1,0 +1,77 @@
+1. Write a Python program to Get Only unique items from two sets. 
+
+Input: 
+
+set1 = {10, 20, 30, 40, 50}              # set1 input set
+set2 = {30, 40, 50, 60, 70}              # set2 input set
+print(set1|set2)                         # use or operator and print the resultant output
+
+OUTPUT :
+
+{70, 40, 10, 50, 20, 60, 30}
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2. Write a Python program to Return a set of elements present in Set A or B, but not both.
+
+ Input: 
+
+set1 = {10, 20, 30, 40, 50} 
+
+set2 = {30, 40, 50, 60, 70}
+
+PROGRAM :
+
+set1 = {10, 20, 30, 40, 50}               # given set1 input 
+set2 = {30, 40, 50, 60, 70}               # given set2 input
+print(set1.symmetric_difference(set2))    # use symmetric_difference to get which is not common in both the sets
+
+OUTPUT :
+
+{20, 70, 10, 60}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Write a Python program to Check if two sets have any elements in common. If yes, display the common elements. 
+
+Input: 
+
+set1 = {10, 20, 30, 40, 50} 
+
+set2 = {60, 70, 80, 90, 10} 
+
+PROGRAM :
+
+set1 = {10, 20, 30, 40, 50}           # given set1 input
+set2 = {60, 70, 80, 90, 10}           # given set2 input 
+print(set1.intersection(set2))        # use intersection to get the common elements in both the sets
+
+
+OUTPUT :
+
+{10}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Write a Python program to Remove items from set1 that are not common to both set1 and set2.
+
+Input: 
+
+set1 = {10, 20, 30, 40, 50} 
+
+set2 = {30, 40, 50, 60, 70} 
+
+PROGRAM :
+
+set1 = {10, 20, 30, 40, 50}             # given input set1
+set2 = {30, 40, 50, 60, 70}             # given input set2
+set1.intersection_update(set2)          # use the set1 intersection_update to set2 to get the common items in the both sets
+print(set1)                             # print the set1
+
+OUTPUT :
+
+{40, 50, 30}
+
+-------------------------------------------------------------------------------------------THANK YOU----------------------------------------------------------------------------------------

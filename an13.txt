@@ -1,0 +1,98 @@
+1. Write a Python program to find the number of times 4 appears in the tuple. 
+
+tuplex = (2, 4, 5, 6, 2, 3, 4, 4, 7 ) 
+
+PROGRAM :
+
+tuplex = (2, 4, 5, 6, 2, 3, 4, 4, 7)                      # given input 
+count=0                                                   # initialise the  variable count as zero
+for value in tuplex:                                      # iterate the tuple using for loop
+    if value==4:                                          # check condition if value in tuple is 4
+        count+=1                                          # then increment the count value
+print("The count of 4 in the tuple is ",count)            # print the final count of the value 4
+
+
+OUTPUT :
+
+The count of 4 in the tuple is  3
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2.Write a Python program to convert a list to a tuple. 
+
+Input: listx = [5, 10, 7, 4, 15, 3]                
+
+PROGRAM :
+
+listx = [5, 10, 7, 4, 15, 3]         # given list to convert it to the tuple
+print(tuple(listx))                  # by using tuple function we will convert the list to the tuple and print it
+
+
+OUTPUT :
+
+(5, 10, 7, 4, 15, 3)
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3. Write a Python program to calculate the sum of the numbers in a given tuple. 
+
+Input: tuples_list = [(1, 2), (3, 4), (5, 6)]
+
+PROGRAM : 
+
+tuples_list = [(1, 2), (3, 4), (5, 6)]                        # given input list
+sum1=0                                                        # initialise the variable sum1 as 0
+for each in tuples_list:                                      # iterate the list using for loop
+    sum1+=sum(each)                                           # and make the sum of each tuple and add it to the sum1 variable
+print("The total sum of the tuples list is ",sum1)            # print the sum1
+
+
+OUTPUT :
+
+
+The total sum of the tuples list is  21
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4.Write a python program and iterate the given tuples
+
+ Input: 
+
+employee1 = ("John Doe", 101, "Human Resources", 60000) 
+
+employee2 = ("Alice Smith", 102, "Marketing", 55000) 
+
+employee3 = ("Bob Johnson", 103, "Engineering", 75000)
+
+
+PROGRAM :
+
+employee = (("John Doe", 101, "Human Resources", 60000) , ("Alice Smith", 102, "Marketing", 55000) , ("Bob Johnson", 103, "Engineering", 75000))
+for i in employee:                                 # iterate the employee tuple  using for loop
+    print("Name : ",i[0])                          # print the name by using 0th index
+    print("Id : ",i[1])                            # print id by using 1st index
+    print("Work :",i[2])                           # print work by its 2nd index
+    print("Salary :",i[3])                         # print the salary using 3rd index
+    print()                                        # print the empty line
+
+OUTPUT :
+
+Name :  John Doe
+Id :  101
+Work : Human Resources
+Salary : 60000
+
+Name :  Alice Smith
+Id :  102
+Work : Marketing
+Salary : 55000
+
+Name :  Bob Johnson
+Id :  103
+Work : Engineering
+Salary : 75000
+
+-------------------------------------------------------------------------------------------------THANK YOU---------------------------------------------------------------------------------

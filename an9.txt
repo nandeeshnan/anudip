@@ -1,0 +1,116 @@
+1. Write a function in python to read the content from a text file "ABC.txt" line by line and display the same on screen. 
+
+PROGRAM : 
+
+
+def read_function():                                                     # define a function called read_function
+    try:                                                                 # write the code in the try block to handle the exception
+        with open("ABC.txt", 'r', encoding='utf-8') as f:                # open the file by using open function as read mode (r) as f
+            for word in f:                                               # iterate the file using for loop 
+                print(word,end=' ')                                      # print each word in the file
+    except FileNotFoundError:                                            # if any exception occurs then handle the exception using except
+        print(f"The file  is not found")                                 # print the error message i.e file not found
+read_function()                                                          # call the function
+
+
+OUTPUT :
+
+Hi Nandeesh 
+ WELCOME TO ANUDIP FOUNDATION
+ This is output to open the file and read the file and to print the same file by line by line 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+2. Write a function in Python to count and display the total number of words in a text file “ABC.txt” 
+
+
+PROGRAM :
+
+
+def read_function():                                                               # define a function called read_function
+    try:                                                                           # write the code in the try block to handle the exceptio
+        with open("ABC.txt", 'r', encoding='utf-8') as f:                          # open the file by using open function as read mode (r) as f
+            read_file=f.read()                                                     # read the file and store the content in the read_file
+            print("The count of words in the file is :",len(read_file.split()))    # print the count of words by using length function and split function
+    except FileNotFoundError:                                                      # if any exception occurs then handle the exception using except
+        print(f"The file  is not found")                                           # print the file not found 
+read_function()                                                                    # call the function
+
+
+OUTPUT :
+
+The count of words in the file is : 27
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+3. Write a function in Python to count uppercase character in a text file “ABC.txt” 
+
+
+PROGRAM :
+
+
+def read_function():                                                                # define the read_function 
+    try:                                                                            # start the try block and write the code inside the try block
+        with open("ABC.txt", 'r', encoding='utf-8') as f:                           # open the file by using open function
+            read_file=f.read()                                                      # read the file and store the content in the read_file
+            count=0                                                                 # initialize the count variable as 0
+            for word in read_file:                                                  # iterate the read_file by using for loop 
+                for charac in word:                                                 # iterate the each word using another for loop as charac                                                   
+                    if ord(charac)>65 and ord(charac)<92:                           # if ascii value of character is greater than 65 and less than 92
+                        count+=1                                                    # increment the count by 1
+            print("The count of uppercase character in the file is :",count)        # print the count
+    except FileNotFoundError:                                                       # handling exception 
+        print(f"The file  is not found")                                            # print the exception
+read_function()                                                                     # call the function
+ 
+
+OUTPUT :
+
+# Hi Nandeesh 
+ # WELCOME TO ANUDIP FOUNDATION
+ # This is output to open the file and read the file and to print the same file by line by line 
+
+The count of uppercase character in the file is : 26
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+4. Write a function display_words() in python to read lines from a text file "story.txt", and display those words, which are less than 4 characters.
+
+
+PROGRAM :
+
+def display_words():                                                      # define the function as display_words
+    try:                                                                  # start the try block and write the code inside it
+        with open("ABC.txt", 'r', encoding='utf-8') as f:                 # open the file using open function
+            read_file=f.read()                                            # read the file and store the content in the variable read_file
+            split_file=read_file.split()                                  # split the read_file so that every word in the file is in the list format
+            for word in split_file:                                       # iterate the split_file(list) using for loop 
+                if len(word)<4:                                           # if length of word is less than 4 characters
+                    print(word)                                           # then print that word
+    except FileNotFoundError:                                             # handling exception 
+        print(f"The file  is not found")                                  # print the exception message
+display_words()                                                           # call the function
+
+
+OUTPUT :
+
+
+Hi
+TO
+is
+to
+the
+and
+the
+and
+to
+the
+by
+by
+
+-------------------------------------------------------------------------------------------------THANK YOU----------------------------------------------------------------------------------

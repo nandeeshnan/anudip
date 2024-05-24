@@ -1,0 +1,68 @@
+1) Declare a div() function with two parameters. Then call the function and pass two numbers and display their division. 
+
+PROGRAM :
+
+
+def div(num1,num2):                                                       # defining the div function with 2 parameters.
+    answer=num1/num2                                                      # expression for the division.
+    return answer                                                         # return the result .
+print("The division of two numbers is ",div(4,2))                         # call the function and print the result.
+
+
+OUTPUT :
+
+
+The division of two numbers is  2.0
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2) Declare a square() function with one parameter. Then call the function and pass one number and display the square of that number .
+
+PROGRAM :
+
+def square(parameter):                                              # define the function as square with one parameter.
+    answer= parameter**2                                            # finding the square of the number and store in the variable in the answer.
+    return answer                                                   # return the answer.
+print(f"The square of the number is ",square(2))                    # call the square function and print the answer.
+
+
+OUTPUT :
+
+
+The square of the number is  4
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3) Using max() and min() functions display the maximum and minimum of 5 random numbers.
+
+PROGRAM : 
+
+list=[43,31,53,66,23]                                                  # storing 5 random numbers in the list.
+print("the maximum value in the list is", max(list))                   # printing the maximum number in the list using max() function .
+print("the minimum value in the list is", min(list))                   # printing the minimum number in the list using min() function .
+
+OUTPUT : 
+
+the maximum value in the list is 66
+the minimum value in the list is 23
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4) Accept a name from the user and display that in lower case using lower() function
+
+
+PROGRAM :
+
+name=input("Enter the name: ")                                    # take the name as input from the user.
+print("The name in the lower case is ",name.lower())              # print each character in the  name in the lower case.
+
+
+OUTPUT : 
+
+Enter the name: NANDEESH
+The name in the lower case is  nandeesh
+
+
+---------------------------------------------------------------------------------------THANK--YOU-------------------------------------------------------------------------------------
