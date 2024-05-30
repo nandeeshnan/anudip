@@ -1,0 +1,79 @@
+1. Write a NumPy program to create an array of 10 zeros, 10 ones, and 10 fives
+
+PROGRAM :
+
+import numpy as np                                           # import numpy module as np
+zeros=np.zeros(10)                                           # by using np.zeros we can array a array of 10 elements with zeros
+print("the arrays with 10 zeros are  \n",zeros)              # print the zeros array
+ones=np.ones(10)                                             # by using np.ones we can array a array of 10 elements with ones
+print("the array with 10 ones are \n",ones)                  # print the ones array
+fives=np.full(10,5)                                          # np.full is used to print the required numbers in the array with required times
+print("the array with 10 fives are \n",fives)                # print the array 
+
+OUTPUT :
+
+the arrays with 10 zeros are  
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+the array with 10 ones are 
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+the array with 10 fives are 
+ [5 5 5 5 5 5 5 5 5 5]
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Write a NumPy program to create a 3x3 matrix with values ranging from 2 to 10.
+
+PROGRAM :
+
+import numpy as np                               # import numpy as np
+matrix_range=np.arange(2,11)                     # np.arange is used to take the values in the array from the specified range
+matrix_format=matrix_range.reshape(3,3)          # reshape is used to reshape the array in the required matrix
+print(matrix_format)                             # print the matrix format
+ 
+OUTPUT :
+
+[[ 2  3  4]
+ [ 5  6  7]
+ [ 8  9 10]]
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+3. Write a NumPy program to create an array with values ranging from 12 to 38.
+
+PROGRAM :
+
+import numpy as np                       # import numpy as np
+new_array=np.arange(12,39)               # arange is used to take the values to the array in the specified range 
+print(new_array)                         # print the array
+
+OUTPUT :
+
+[12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38]
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+4. Write a NumPy program to convert a list and tuple into arrays. Input: my_list = [1, 2, 3, 4, 5, 6, 7, 8] 
+
+Input: my_tuple = ([8, 4, 6], [1, 2, 3])
+
+PROGRAM :
+
+import numpy as np                                            # import the numpy as np
+my_list = [1, 2, 3, 4, 5, 6, 7, 8]                            # given list input 
+my_tuple = ([8, 4, 6], [1, 2, 3])                             # given tuple input
+list_array=np.array(my_list)                                  # using np.array(list) we can the convert the list into array
+print("The list is converted into array \n",list_array)       # print the array which is converted from list
+tuple_array=np.array(my_tuple)                                # np.array will convert the tuple to array 
+new_array=tuple_array.reshape(1,6)                            # here i used  reshape  to reshape the matrix into single array
+print("the tuple is converted into array \n",new_array)       # print the array which is converted from the tuple
+
+
+OUTPUT :
+
+The list is converted into array 
+ [1 2 3 4 5 6 7 8]
+the tuple is converted into array 
+ [[8 4 6 1 2 3]]
+
+-----------------------------------------------------------------------------------------THANK YOU------------------------------------------------------------------------------------------

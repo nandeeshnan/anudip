@@ -1,0 +1,39 @@
+1. Convert the below list into numpy array then display the array
+
+Input: my_list = [1, 2, 3, 4, 5]                      # input list
+
+PROGRAM :
+
+import numpy as np                                   # import numpy module as np
+my_list = [1, 2, 3, 4, 5]                            # given input list
+new_array=np.array(my_list)                          # using np.array(my_list) convert the list to the arrray
+print(new_array)                                     # print the new array 
+  
+OUTPUT :
+
+[1 2 3 4 5]
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Convert the below list into a numpy array then display the array then display the first and last index and then multiply each element by 2 and display the result.
+
+Input: my_list = [1, 2, 3, 4, 5]
+
+PROGRAM :
+
+import numpy as np                                               # import the numpy module as np
+my_list = [1, 2, 3, 4, 5]                                        # given input list
+new_array=np.array(my_list)                                      # by using np.array(my_list) convert the list to the array                                 
+print(new_array)                                                 # print the new_aray
+print("The first element in the array is ",my_list[0])           # by using the 0th index print the 1st element in the list
+print("The last element in the array is ",my_list[-1])           # by using the -1 th index print the last element in the list
+print(new_array * 2)                                             # multiply the array with 2 and that array which is multiplied by 2
+
+OUTPUT :
+
+The new array is  [1 2 3 4 5]
+The first element in the array is  1
+The last element in the array is  5
+[ 2  4  6  8 10]
+
+---------------------------------------------------------------------------------------THANK YOU--------------------------------------------------------------------------------------------
