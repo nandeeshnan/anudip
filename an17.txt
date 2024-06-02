@@ -1,0 +1,73 @@
+
+1. Suppose you have a dataset containing daily temperature readings for a city, and you want to identify days with extreme temperature conditions. Find days where the temperature either exceeded 35 degrees Celsius (hot day) or dropped below 5 degrees Celsius (cold day). 
+
+Input:
+
+temperatures = np.array([32.5, 34.2, 36.8, 29.3, 31.0, 38.7, 23.1, 18.5, 22.8, 37.2,4,25,12,-4,-12])
+
+
+PROGRAM :
+
+import numpy as np                                                                                     # import numpy module as np
+l = np.array([32.5, 34.2, 36.8, 29.3, 31.0, 38.7, 23.1, 18.5, 22.8, 37.2, 4, 25, 12, -4, -12])         # given input array
+sorted_indices = np.argsort(l)                                                                         # argsort will return the sorted indices of an array
+top_3_indices = sorted_indices[-3:]                                                                    # store the top (last 3 indices) in top_3_indices variable   
+last_3_indices = sorted_indices[:3]                                                                    # store the last (first 3 indices) in last_3_indices variable
+sorted1=sorted(top_3_indices)                                                                          # sort that top 3 indices and store in sorted1 variable
+sorted2=sorted(last_3_indices)                                                                         # sort that last 3 indices and store in sorted2 variable
+print("       HOT DAYS")                                                                               # print the statement HOT DAYS
+for i in sorted1:                                                                                      # using for loop iterate the sorted1 array
+    print(f"The temperature on day {i+1} is ",l[i])                                                    # print the temperature on that day by using l[indices]
+print()                                                                                                # print empty , so we can have on empty line
+print("       COLD DAYS")                                                                              # print the statement COLD DAYS 
+for i in sorted2:                                                                                      # using for loop iterate the sorted 2 array
+    print(f"The temperature on day {i+1} is ",l[i])                                                    # print the temperature on that day by using l[indices]
+
+
+OUTPUT :
+
+      HOT DAYS
+The temperature on day 3 is  36.8
+The temperature on day 6 is  38.7
+The temperature on day 10 is  37.2
+
+       COLD DAYS
+The temperature on day 11 is  4.0
+The temperature on day 14 is  -4.0
+The temperature on day 15 is  -12.0
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+2. Suppose you have a dataset containing monthly sales data for a company, and you want to split this data into quarterly reports for analysis and reporting purposes. 
+
+Input: monthly_sales = np.array([120, 135, 148, 165, 180, 155, 168, 190, 205, 198, 210, 225])
+
+PROGRAM :
+
+monthly_sales = np.array([120, 135, 148, 165, 180, 155, 168, 190, 205, 198, 210, 225])              # given input array
+i=0                                                                                                 # initialize the variable i to 0
+j=3                                                                                                 # initialize the variable j as 3
+count=int(len(monthly_sales)/3)                                                                     # divide the length of array to 4 parts
+for k in range(count):                                                                              # iterate upto range 4
+    print(f"Quarter {k+1} sales (in thousand of dollars):")                                         # print the statement 
+    print(monthly_sales[i:j])                                                                       # print values from i to j
+    i+=3                                                                                            # increament i with 3
+    j+=3                                                                                            # increament j with 3
+    print()                                                                                         # print the empty line 
+  
+
+OUTPUT :
+
+Quarter 1 sales (in thousand of dollars):
+[120 135 148]
+
+Quarter 2 sales (in thousand of dollars):
+[165 180 155]
+
+Quarter 3 sales (in thousand of dollars):
+[168 190 205]
+
+Quarter 4 sales (in thousand of dollars):
+[198 210 225]
+
+-----------------------------------------------------------------------------------------THANK YOU------------------------------------------------------------------------------------------
